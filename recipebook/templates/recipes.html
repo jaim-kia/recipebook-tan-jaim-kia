@@ -1,0 +1,15 @@
+<html lang="en-US">
+<head>
+    <title>Recipe Book</title>
+</head>
+<body>
+    <h1>Recipe Book</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>
+                <a href="/ledger{{ recipe.link }}"> link to recipe {{ forloop.counter }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
