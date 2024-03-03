@@ -7,7 +7,7 @@
     <ul>
         {% for recipe in recipes %}
             <li>
-                <a href="/ledger{{ recipe.link }}"> link to recipe {{ forloop.counter }}</a>
+                <a href="{{ recipe.link }}"> link to recipe {{ forloop.counter }}</a>
             </li>
         {% endfor %}
     </ul>
