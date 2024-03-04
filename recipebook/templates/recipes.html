@@ -5,9 +5,9 @@
 <body>
     <h1>Recipe Book</h1>
     <ul>
-        {% for recipe in recipes %}
+        {% for recipe in object_list %}
             <li>
-                <a href="{{ recipe.link }}"> link to recipe {{ forloop.counter }}</a>
+                <a href="{{ recipe.get_absolute_url }}"> link to recipe {{ forloop.counter }}</a>
             </li>
         {% endfor %}
     </ul>
