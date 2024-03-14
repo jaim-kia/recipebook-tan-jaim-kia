@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+    <a href="{% url 'password_reset' %}">Forgot your password?</a>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
