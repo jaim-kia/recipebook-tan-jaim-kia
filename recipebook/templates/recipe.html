@@ -1,9 +1,6 @@
-<html lang="en-US">
-<head>
-    <title>Recipe Book</title>
-</head>
-<body>
-    <h1>Recipe Book</h1>
+{% extends 'base.html' %}
+
+{% block content %}
     <h4>{{  recipe.name  }}</h4>
     <h5>{{  recipe.author  }}</h5>
     <ul>
@@ -11,5 +8,4 @@
         <li>{{  ingredient.ingredient.name  }}: {{  ingredient.quantity  }}</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}

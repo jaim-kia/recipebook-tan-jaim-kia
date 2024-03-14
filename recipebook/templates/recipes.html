@@ -1,9 +1,6 @@
-<html lang="en-US">
-<head>
-    <title>Recipe Book</title>
-</head>
-<body>
-    <h1>Recipe Book</h1>
+{% extends 'base.html' %}
+
+{% block content %}
     <ul>
         {% for recipe in object_list %}
             <li>
@@ -11,5 +8,4 @@
             </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
