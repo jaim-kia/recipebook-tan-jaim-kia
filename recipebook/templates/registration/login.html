@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+    <h3> Login Page </h3>
     <a href="{% url 'password_reset' %}">Forgot your password?</a>
     <form method="POST">
         {% csrf_token %}
